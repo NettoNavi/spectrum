@@ -1,0 +1,82 @@
+<html>
+	<head>
+
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="main.css">
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<nav class="container navbar navbar-main">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Spectrum | Minecraft</a>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<div class="container">
+				<div class="col-sm-3 sidebar">
+					<a id="status-btn" href=""><p class="lead sidebar-link"><span class="glyphicon glyphicon-stats sidebar-icon"></span> STATUS</p></a>
+					<a id="console-btn" href=""><p class="lead sidebar-link"><span class="glyphicon glyphicon-log-in sidebar-icon"></span> CONSOLE</p></a>
+					<a id="config-btn" href=""><p class="lead sidebar-link"><span class="glyphicon glyphicon-cog sidebar-icon"></span> CONFIGURATION</p></a>
+
+				</div>
+				<div class="col-sm-9">
+
+					<div id="status-area" class="container-fluid content status-area">
+						<div class="panel panel-default panel2">
+							<div class="panel-heading2">
+								<h3 class="panel-title text-center">Server Status</h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-xs-6">
+									<p class="lead">Server Connection</p>
+									<p class="lead">Server Load</p>
+									<p class="lead">Players Online</p>
+								</div>
+								<div class="col-xs-6">
+									<p id="server-online-status" class="lead">ONLINE</p>
+									<p id="server-load" class="lead">NAN</p>
+									<p id="players-online" class="lead">0</p>
+								</div>
+								<div class="sys-btns text-center">
+									<button id="server-shutdown-btn" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Shutdown</button>
+									<button id="server-restart-btn" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Restart</button>
+									<button id="server-save-world-btn" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Save World</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div id="console-area" class="container-fluid content console-area">
+						<div class="panel panel-default panel2">
+							<div class="panel-heading2">
+								<h3 class="panel-title text-center">Server Console</h3>
+							</div>
+							<div class="panel-body">
+							<p class="lead text-center">CONSOLE STUFFS</p>
+							</div>
+						</div>
+					</div>
+					
+					
+
+				</div>
+			</div>
+		</section>
+
+
+	</body>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="main.js"></script>
+</html>
