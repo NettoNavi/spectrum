@@ -1,0 +1,4 @@
+spectrum
+========
+
+An administrative interface
