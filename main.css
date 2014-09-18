@@ -67,3 +67,16 @@ a:hover {
 #console-area {
 	display: none;
 }
+
+#config-area {
+    display: none;
+}
+
+#server-online-status {
+    color: red;
+}
+
+.selection-text {
+    color: #000;
+    padding-bottom: 4em;
+}
