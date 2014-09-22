@@ -1,7 +1,7 @@
 <html>
     <head>
 
-
+		<title>Spectrum - Minecraft Admin</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -19,6 +19,9 @@
             <nav class="container navbar navbar-main">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Spectrum | Minecraft</a>
+                </div>
+                <div id="server-nav-heading" class="navbar-brand navbar-right">
+                	<p class="">Connected to:  </p><p id="server-nav-name">NOTHING</p>
                 </div>
 
 
@@ -43,9 +46,9 @@
                             </div>
                             <div class="panel-body">
                                 <div class="text-center selection-text">
-                                    <select>
+                                    <select class="server-select">
                                         <option value="NULL">SELECT A SERVER</option>
-                                        <option value="nebula">Nebula</option>
+                                        <option value="Nebula">Nebula</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-6">
@@ -59,10 +62,11 @@
                                     <p id="players-online" class="lead">0</p>
                                 </div>
                                 <div class="sys-btns text-center">
-                                    <button id="server-shutdown-btn" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Shutdown</button>
-                                    <button id="server-restart-btn" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Restart</button>
-                                    <button id="server-save-world-btn" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Reload Server</button>
-                                    <button id="server-save-world-btn" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Save World</button>
+                                   <button id="server-start-btn" type="button" class="btn btn-success dropdown-toggle if-offline-btn" data-toggle="dropdown">Start Server</button>
+                                    <button id="server-shutdown-btn" type="button" class="btn btn-danger dropdown-toggle if-online-btn" data-toggle="dropdown">Shutdown</button>
+                                    <button id="server-restart-btn" type="button" class="btn btn-warning dropdown-toggle if-online-btn" data-toggle="dropdown">Restart</button>
+                                    <button id="server-save-world-btn" type="button" class="btn btn-info dropdown-toggle if-online-btn" data-toggle="dropdown">Reload Server</button>
+                                    <button id="server-save-world-btn" type="button" class="btn btn-success dropdown-toggle if-online-btn" data-toggle="dropdown">Save World</button>
                                 </div>
                             </div>
                         </div>

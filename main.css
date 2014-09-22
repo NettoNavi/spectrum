@@ -80,3 +80,19 @@ a:hover {
     color: #000;
     padding-bottom: 4em;
 }
+
+.if-offline-btn{
+	display: inline;
+}
+
+.if-online-btn {
+	display: none;
+}
+
+#server-nav-heading * {
+	display: inline;
+}
+
+#server-nav-heading {
+	display: none;
+}
